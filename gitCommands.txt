@@ -1,0 +1,52 @@
+Three layer architecture
+1.working area
+2.staging area
+3.commits
+
+git remote set-url origin 
+
+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
+
+
+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
+
+
+
+touch name.txt
+touch .gitignore //ignores those files which are add in .ignore //   *.log, *.docs, *.xlsx
+git init     //to initialise git repository
+git status   //to see status of the files
+git add OR git add filename.txt    //to bring the files into staging area
+git commit -m "<message>" //to add message after adding files
+cat a.txt    //to see the contents  of the files
+git log      // to see all the commits whoever have done
+rm -rf a.txt   //to delete the file
+git reset <commit hash code>   //to reset all the commits above this commit
+git clone <http url repository> OR   git clone <http url> filename  //to clone the other repository using https 
+git diff a.txt  //to see the difference between modified file and old file
+git diff --staged a.txt //to see changes of the file even after git add .
+git reset a.txt //to reset the changes even after adding file to the staging area
+git checkout a.txt OR git checkout .   (For the multiple files reset) // to see the previous file as it is even modified and after running this command
+git add -p index.php //to add old file even if it is modified
+
+
+
+for creating a pull request
+
+git clone <http url>  //take the copy of the project
+git checkout -b branchname   //create a branch
+git pull origin master   // pull all the changes of the project
+*******modify the changes************
+git add . OR git add <modifiedfile>
+git commit -m "Add a comment"
+git push origin <branchname>
+
+
+
+sangamner
+
+
+
+********pull request will be appear in github**********
+create a pull request
+
